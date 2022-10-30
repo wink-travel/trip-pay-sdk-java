@@ -92,6 +92,7 @@ Create 2 environment variables in your preferred way:
 ## You might also be interested in...
 If you are developing for WordPress, we've [probably] got you covered. Check out our WordPress plugin:
 
+- Wink IAM Java SDK repo: [https://github.com/wink-travel/iam-sdk-java](https://github.com/wink-travel/iam-sdk-java)
 - Wink Java SDK repo: [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)
 - Wink WordPress plugin repo: [https://github.com/wink-travel/affiliate-wordpress-plugin](https://github.com/wink-travel/affiliate-wordpress-plugin)
 - Wink WordPress Divi plugin repo: [https://github.com/wink-travel/affiliate-wordpress-divi-plugin](https://github.com/wink-travel/affiliate-wordpress-divi-plugin)
