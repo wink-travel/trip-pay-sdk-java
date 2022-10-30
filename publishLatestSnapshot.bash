@@ -4,12 +4,12 @@
 # Copyright (c) 2021. wink.travel. All rights Reserved.
 #
 
-echo "Publishing wink-sdk-java SNAPSHOT..."
+echo "Publishing trip-pay-sdk-java SNAPSHOT..."
 
 ./downloadLatestOpenApiSpecs.bash staging
 
 # grab the latest platform version from one of the new open api spec files
-newVersion=`jq -r '.info.version' ./affiliate/src/main/resources/openapi-spec.json`
+newVersion=`jq -r '.info.version' ./payment/src/main/resources/openapi-spec.json`
 
 echo "Setting the next snapshot version to $newVersion"
 mvn versions:set -DnewVersion=$newVersion -DgenerateBackupPoms=false
@@ -23,4 +23,4 @@ git push origin develop:refs/heads/develop
 #echo "Pushing snapshot artifacts to Sonatype..."
 #mvn deploy -Psonatype-oss-release
 
-echo "Publishing wink-sdk-java SNAPSHOT SUCCESS"
+echo "Publishing trip-pay-sdk-java SNAPSHOT SUCCESS"

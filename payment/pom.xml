@@ -5,7 +5,7 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>trip-pay-sdk-java</artifactId>
-        <version>22.1.9-SNAPSHOT</version>
+        <version>23.0.0</version>
     </parent>
     <artifactId>payment-sdk-java</artifactId>
     <packaging>jar</packaging>
@@ -41,9 +41,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.sdk.payment.api</apiPackage>
-                                <modelPackage>travel.wink.sdk.payment.model</modelPackage>
-                                <invokerPackage>travel.wink.sdk.payment.invoker</invokerPackage>
+                                <apiPackage>io.trippay.sdk.payment.api</apiPackage>
+                                <modelPackage>io.trippay.sdk.payment.model</modelPackage>
+                                <invokerPackage>io.trippay.sdk.payment.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>
@@ -60,11 +60,11 @@
         </plugins>
     </build>
 
-    <dependencies>
-        <dependency>
-            <groupId>travel.wink</groupId>
-            <artifactId>oauth2-web-client</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-    </dependencies>
+<!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>travel.wink</groupId>-->
+<!--            <artifactId>oauth2-web-client</artifactId>-->
+<!--            <version>${project.parent.version}</version>-->
+<!--        </dependency>-->
+<!--    </dependencies>-->
 </project>

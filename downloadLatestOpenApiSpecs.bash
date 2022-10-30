@@ -32,19 +32,13 @@ retrieveOpenApiSpecFunction() {
 env=$1
 
 echo "Download latest deployed Open API specs..."
-winkUrl="https://api.wink.travel"
-integrationsUrl="https://integrations.wink.travel"
 tripPayUrl="https://api.trippay.io"
 
 if [[ $env == *"dev"* ]]; then
-  winkUrl="https://dev-api.wink.travel:8443"
-  integrationsUrl="https://dev-integrations.wink.travel:8445"
   tripPayUrl="https://dev-api.trippay.io:8444"
 fi
 
 if [[ $env == *"staging"* ]]; then
-  winkUrl="https://staging-api.wink.travel"
-  integrationsUrl="https://staging-integrations.wink.travel"
   tripPayUrl="https://staging-api.trippay.io"
 fi
 

@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>trip-pay-sdk-java</artifactId>
-    <version>22.1.9-SNAPSHOT</version>
+    <version>23.0.0</version>
     <packaging>pom</packaging>
     <name>TripPay Java SDK</name>
     <description>Java libraries for all TripPay APIs.</description>
@@ -18,8 +18,8 @@
         <developer>
             <id>1</id>
             <name>Bjorn Harvold</name>
-            <email>bjorn@trippay.io</email>
-            <url>https://trippay.io</url>
+            <email>bjorn@wink.travel</email>
+            <url>https://wink.travel</url>
             <organization>TripPay Corporation USA</organization>
             <roles>
                 <role>CTO</role>
@@ -75,7 +75,6 @@
     <modules>
 		<module>payment</module>
 		<module>payment-acquiring</module>
-        <module>oauth2-web-client</module>
     </modules>
 
     <build>
@@ -291,6 +290,7 @@
     </distributionManagement>
 
     <dependencies>
+        <!-- Platform deps -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
