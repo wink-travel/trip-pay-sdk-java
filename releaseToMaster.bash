@@ -4,7 +4,7 @@
 # Copyright (c) 2021. wink.travel. All rights Reserved.
 #
 
-echo "Releasing wink-sdk-java..."
+echo "Releasing trip-pay-sdk-java..."
 
 echo "Sync-ing remote master with local"
 git checkout master

@@ -4,7 +4,7 @@
 # Copyright (c) 2021. wink.travel. All rights Reserved.
 #
 
-echo "Publishing wink-sdk-java SNAPSHOT..."
+echo "Publishing trip-pay-sdk-java SNAPSHOT..."
 
 ./downloadLatestOpenApiSpecs.bash staging
 
@@ -23,4 +23,4 @@ git push origin develop:refs/heads/develop
 #echo "Pushing snapshot artifacts to Sonatype..."
 #mvn deploy -Psonatype-oss-release
 
-echo "Publishing wink-sdk-java SNAPSHOT SUCCESS"
+echo "Publishing trip-pay-sdk-java SNAPSHOT SUCCESS"
