@@ -18,8 +18,8 @@
         <developer>
             <id>1</id>
             <name>Bjorn Harvold</name>
-            <email>bjorn@trippay.io</email>
-            <url>https://trippay.io</url>
+            <email>bjorn@wink.travel</email>
+            <url>https://wink.travel</url>
             <organization>TripPay Corporation USA</organization>
             <roles>
                 <role>CTO</role>
@@ -75,7 +75,6 @@
     <modules>
 		<module>payment</module>
 		<module>payment-acquiring</module>
-        <module>oauth2-web-client</module>
     </modules>
 
     <build>
@@ -291,6 +290,7 @@
     </distributionManagement>
 
     <dependencies>
+        <!-- Platform deps -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>

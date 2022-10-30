@@ -1,16 +1,16 @@
-package travel.wink.sdk.payment;
+package io.trippay.sdk.payment;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
-import travel.wink.sdk.payment.api.AccountApi;
-import travel.wink.sdk.payment.api.AccountMappingsApi;
-import travel.wink.sdk.payment.api.AgentApi;
-import travel.wink.sdk.payment.api.ContractApi;
-import travel.wink.sdk.payment.api.MappingApi;
-import travel.wink.sdk.payment.api.PingApi;
-import travel.wink.sdk.payment.invoker.ApiClient;
+import io.trippay.sdk.payment.api.AccountApi;
+import io.trippay.sdk.payment.api.AccountMappingsApi;
+import io.trippay.sdk.payment.api.AgentApi;
+import io.trippay.sdk.payment.api.ContractApi;
+import io.trippay.sdk.payment.api.MappingApi;
+import io.trippay.sdk.payment.api.PingApi;
+import io.trippay.sdk.payment.invoker.ApiClient;
 
 @RequiredArgsConstructor
 @Configuration
