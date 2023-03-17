@@ -2,6 +2,72 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 24.7.0 (2023-03-17)
+
+
+
+### Features
+
+-  :sparkles: immediateRefund endpoints now available ([4ba81](https://github.com/wink-travel/trip-pay-sdk-java/commit/4ba81c11793c078) Bjorn Harvold)  
+
+
+
+
+### Other changes
+
+**Update versions for release**
+
+
+[ba2c6](https://github.com/wink-travel/trip-pay-sdk-java/commit/ba2c64fe00365f2) Bjorn Harvold *2023-03-17 12:45:37*
+
+**Merge branch 'release/24.7.0'**
+
+
+[7a2eb](https://github.com/wink-travel/trip-pay-sdk-java/commit/7a2eb8f23b63a69) Bjorn Harvold *2023-03-17 12:45:37*
+
+**:bookmark: build: Updated Open API files**
+
+
+[88a03](https://github.com/wink-travel/trip-pay-sdk-java/commit/88a03b89dd24878) Bjorn Harvold *2023-03-17 12:45:34*
+
+**:bookmark: build: Updated Open API files**
+
+
+[d278d](https://github.com/wink-travel/trip-pay-sdk-java/commit/d278d311341aa1c) Bjorn Harvold *2023-03-12 04:52:06*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[290fe](https://github.com/wink-travel/trip-pay-sdk-java/commit/290fe9f927cc5cb) Bjorn Harvold *2023-03-10 02:19:06*
+
+**Update for next development version**
+
+
+[f127d](https://github.com/wink-travel/trip-pay-sdk-java/commit/f127df7fc95131e) Bjorn Harvold *2023-03-10 02:18:49*
+
+**Merge tag '24.3.3' into develop**
+
+* Tag release 
+
+[d1b48](https://github.com/wink-travel/trip-pay-sdk-java/commit/d1b4887155182e8) Bjorn Harvold *2023-03-10 02:18:47*
+
+
+## v24.3.3 (2023-03-10)
+
+
+
+
+
+
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[4cc55](https://github.com/wink-travel/trip-pay-sdk-java/commit/4cc5593cb47ee8c) Bjorn Harvold *2023-03-10 02:19:01*
+
+
 ## 24.3.3 (2023-03-10)
 
 
