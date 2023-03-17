@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>trip-pay-sdk-java</artifactId>
-    <version>24.3.3</version>
+    <version>24.7.0</version>
     <packaging>pom</packaging>
     <name>TripPay Java SDK</name>
     <description>Java libraries for all TripPay APIs.</description>
@@ -166,6 +166,12 @@
                 <groupId>com.amashchenko.maven.plugin</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>${gitflow.maven.plugin}</version>
+                <configuration>
+                    <allowSnapshots>true</allowSnapshots>
+                    <fetchRemote>false</fetchRemote>
+                    <skipFeatureVersion>true</skipFeatureVersion>
+                    <skipUpdateVersion>false</skipUpdateVersion>
+                </configuration>
             </plugin>
 
             <plugin>
