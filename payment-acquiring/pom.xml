@@ -5,7 +5,7 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>trip-pay-sdk-java</artifactId>
-        <version>24.7.0</version>
+        <version>25.0.3</version>
     </parent>
     <artifactId>payment-acquiring-sdk-java</artifactId>
     <packaging>jar</packaging>
