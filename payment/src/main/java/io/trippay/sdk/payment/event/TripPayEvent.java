@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import lombok.Value;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.beans.ConstructorProperties;
 import java.time.LocalDateTime;
 
