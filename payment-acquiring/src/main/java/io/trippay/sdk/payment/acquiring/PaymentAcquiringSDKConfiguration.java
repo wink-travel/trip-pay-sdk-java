@@ -1,8 +1,8 @@
 package io.trippay.sdk.payment.acquiring;
 
+import io.trippay.sdk.payment.acquiring.api.AcquiringApi;
 import io.trippay.sdk.payment.acquiring.api.AffiliateApi;
 import io.trippay.sdk.payment.acquiring.api.ContractApi;
-import io.trippay.sdk.payment.acquiring.api.StripeApi;
 import io.trippay.sdk.payment.acquiring.invoker.ApiClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +28,7 @@ public class PaymentAcquiringSDKConfiguration {
 		return new ContractApi(apiClient());
 	}
 	@Bean
-	public StripeApi stripeApi() {
-		return new StripeApi(apiClient());
+	public AcquiringApi stripeApi() {
+		return new AcquiringApi(apiClient());
 	}
 }
