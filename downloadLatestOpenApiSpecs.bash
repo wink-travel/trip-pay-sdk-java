@@ -47,12 +47,12 @@ paymentUrl="$tripPayUrl/v3/api-docs/payment"
 paymentSpecLocation="./payment/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $paymentUrl $paymentSpecLocation
-
-echo "Grabbing Payment Acquiring spec..."
-paymentAcquiringUrl="$tripPayUrl/v3/api-docs/payment-acquiring"
-paymentAcquiringSpecLocation="./payment-acquiring/src/main/resources/openapi-spec.json"
-
-retrieveOpenApiSpecFunction $paymentAcquiringUrl $paymentAcquiringSpecLocation
+#
+#echo "Grabbing Payment Acquiring spec..."
+#paymentAcquiringUrl="$tripPayUrl/v3/api-docs/payment-acquiring"
+#paymentAcquiringSpecLocation="./payment-acquiring/src/main/resources/openapi-spec.json"
+#
+#retrieveOpenApiSpecFunction $paymentAcquiringUrl $paymentAcquiringSpecLocation
 
 STATUS=$?
 if [ $STATUS -ne 0 ]; then

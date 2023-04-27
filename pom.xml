@@ -75,7 +75,7 @@
 
     <modules>
 		<module>payment</module>
-		<module>payment-acquiring</module>
+<!--		<module>payment-acquiring</module>-->
     </modules>
 
     <build>
