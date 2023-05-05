@@ -2,6 +2,81 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 25.3.0 (2023-05-05)
+
+
+
+
+
+
+
+### Other changes
+
+**Update versions for release**
+
+
+[e9e41](https://github.com/wink-travel/trip-pay-sdk-java/commit/e9e41b9cf66e880) Bjorn Harvold *2023-05-05 03:21:30*
+
+**Merge branch 'release/25.3.0'**
+
+
+[909c5](https://github.com/wink-travel/trip-pay-sdk-java/commit/909c5d6ce02e12b) Bjorn Harvold *2023-05-05 03:21:30*
+
+**:bookmark: build: Updated Open API files**
+
+
+[88a73](https://github.com/wink-travel/trip-pay-sdk-java/commit/88a73ef7e1199a5) Bjorn Harvold *2023-05-05 03:21:27*
+
+**:recycle: refactor: removed payment acquiring module**
+
+* BREAKING-CHANGE: consolidated in a single jar 
+
+[f5933](https://github.com/wink-travel/trip-pay-sdk-java/commit/f593312ec33cca9) Bjorn Harvold *2023-04-27 08:42:29*
+
+**:recycle: refactor: updated payment endpoint**
+
+* BREAKING-CHANGE: old endpoint /api/payment/ no longer available. Use /api/acquiring 
+
+[076fe](https://github.com/wink-travel/trip-pay-sdk-java/commit/076feb02fc8ccf3) Bjorn Harvold *2023-04-27 06:53:42*
+
+**:memo: docs: updated readme**
+
+
+[35c39](https://github.com/wink-travel/trip-pay-sdk-java/commit/35c3951eddaad52) Bjorn Harvold *2023-04-27 06:40:50*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[3c56c](https://github.com/wink-travel/trip-pay-sdk-java/commit/3c56ca00acd69b5) Bjorn Harvold *2023-04-26 02:14:16*
+
+**Update for next development version**
+
+
+[86d85](https://github.com/wink-travel/trip-pay-sdk-java/commit/86d8532b5e250b4) Bjorn Harvold *2023-04-26 02:14:00*
+
+**Merge tag '25.2.7' into develop**
+
+* Tag release 
+
+[f020a](https://github.com/wink-travel/trip-pay-sdk-java/commit/f020a48de8bbddf) Bjorn Harvold *2023-04-26 02:13:58*
+
+
+## v25.2.7 (2023-04-26)
+
+
+
+
+
+
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[84f4b](https://github.com/wink-travel/trip-pay-sdk-java/commit/84f4bb0eb187e5d) Bjorn Harvold *2023-04-26 02:14:12*
+
+
 ## 25.2.7 (2023-04-26)
 
 
