@@ -7,7 +7,7 @@
       "name": "Bjorn Harvold",
       "email": "bjorn@wink.travel"
     },
-    "version": "25.4.2",
+    "version": "25.5.1-SNAPSHOT",
     "x-logo": {
       "backgroundColor": "#FFFFFF",
       "altText": "TripPay logo",
@@ -4804,7 +4804,7 @@
           },
           "localAccountIdentifier": {
             "type": "string",
-            "description": "Local account identifier is the payment identifier",
+            "description": "Local account identifier is the account identifier of the remote entity within TripPay",
             "example": "hotel-1"
           },
           "externalIdentifier": {
@@ -4871,6 +4871,17 @@
         },
         "description": "Person doing the booking."
       },
+      "CustomMonetaryAmount": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string"
+          }
+        }
+      },
       "Itinerary": {
         "required": [
           "adults",
@@ -4922,25 +4933,6 @@
           }
         },
         "description": "Itinerary outlines stay dates, number of adults and children"
-      },
-      "Moneys": {
-        "required": [
-          "amount",
-          "currency"
-        ],
-        "type": "object",
-        "properties": {
-          "amount": {
-            "type": "number",
-            "description": "Amount in currency",
-            "format": "double"
-          },
-          "currency": {
-            "type": "string",
-            "description": "Specified currency"
-          }
-        },
-        "description": "Localized amount for displaying amount / currency pairs"
       },
       "Personal": {
         "type": "object",
@@ -5351,7 +5343,7 @@
             "example": "2020-08-24"
           },
           "price": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "In case of LODGING, include daily rates"
@@ -5432,7 +5424,7 @@
             "example": "This is the best deluxe king that money can buy."
           },
           "price": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "itinerary": {
             "$ref": "#/components/schemas/Itinerary"
@@ -5515,7 +5507,7 @@
             }
           },
           "totalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "Holds one booking line item for a specific supplier."
@@ -5644,7 +5636,7 @@
         "type": "object",
         "properties": {
           "fixedAmount": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "percent": {
             "type": "number",
@@ -5739,19 +5731,19 @@
             "example": "2020-08-24"
           },
           "price": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "displayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "supplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "internalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "capturePrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "In case of LODGING, include daily rates"
@@ -5833,19 +5825,19 @@
             "example": "This is the best deluxe king that money can buy."
           },
           "price": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "displayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "supplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "internalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "capturePrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "itinerary": {
             "$ref": "#/components/schemas/Itinerary"
@@ -5928,19 +5920,19 @@
             }
           },
           "totalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalDisplayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalSupplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalInternalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalCapturePrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "Holds one booking line item for a specific supplier.",
@@ -6021,19 +6013,19 @@
             "example": "external-transaction-1"
           },
           "totalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalDisplayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalSupplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalInternalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalCapturePrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "Details of the booking entries that went in for one particular supplier directly."
@@ -6133,7 +6125,7 @@
             }
           },
           "totalDisplayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "Validated and priced contract"
@@ -6155,16 +6147,16 @@
             "example": "2020-08-24"
           },
           "price": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "displayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "supplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "internalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "In case of LODGING, include daily rates"
@@ -6241,16 +6233,16 @@
             "example": "external-transaction-1"
           },
           "totalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalDisplayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalSupplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalInternalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "Details of the booking entries that went in for one particular supplier directly."
@@ -6286,16 +6278,16 @@
             "example": "This is the best deluxe king that money can buy."
           },
           "price": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "displayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "supplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "internalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "itinerary": {
             "$ref": "#/components/schemas/Itinerary"
@@ -6378,16 +6370,16 @@
             }
           },
           "totalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalDisplayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalSupplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalInternalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "Holds one booking line item for a specific supplier.",
@@ -6717,19 +6709,19 @@
             ]
           },
           "sourcePrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "supplierPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "displayPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "internalPrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "capturePrice": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "cancellableByTraveler": {
             "type": "boolean",
@@ -6744,19 +6736,19 @@
             "description": "Whether this item can be cancelled by supplier either fully or partially."
           },
           "sourcePriceAfterRefund": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "supplierPriceAfterRefund": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "displayPriceAfterRefund": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "internalPriceAfterRefund": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "capturePriceAfterRefund": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           }
         },
         "description": "Contract item cancellable object"
@@ -6855,70 +6847,60 @@
             "minimum": 0,
             "type": "number",
             "description": "Amount in source currency",
-            "format": "double",
             "example": 50
           },
           "displayAmount": {
             "minimum": 0,
             "type": "number",
             "description": "Amount in display currency",
-            "format": "double",
             "example": 50
           },
           "supplierAmount": {
             "minimum": 0,
             "type": "number",
             "description": "Amount in supplier currency",
-            "format": "double",
             "example": 50
           },
           "internalAmount": {
             "minimum": 0,
             "type": "number",
             "description": "Amount in internal currency",
-            "format": "double",
             "example": 50
           },
           "captureAmount": {
             "minimum": 0,
             "type": "number",
             "description": "Amount in capture currency",
-            "format": "double",
             "example": 50
           },
           "sourceAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original source amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "displayAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original display amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "supplierAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original supplier amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "internalAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original internal amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "captureAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original capture amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "pendingRefunds": {
@@ -6927,25 +6909,20 @@
               "$ref": "#/components/schemas/PendingRefund"
             }
           },
-          "netSourceAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "netDisplayAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "netInternalAmount": {
-            "type": "number",
-            "format": "double"
-          },
           "netCaptureAmount": {
-            "type": "number",
-            "format": "double"
+            "type": "number"
           },
           "netSupplierAmount": {
-            "type": "number",
-            "format": "double"
+            "type": "number"
+          },
+          "netSourceAmount": {
+            "type": "number"
+          },
+          "netDisplayAmount": {
+            "type": "number"
+          },
+          "netInternalAmount": {
+            "type": "number"
           }
         },
         "description": "Beneficiary is a registered account with rights to compensation within a booking."
@@ -7149,61 +7126,204 @@
           "sourceAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total initial price as quoted in the original TripPay contract.",
-            "format": "double"
+            "description": "The total initial price as quoted in the original TripPay contract."
           },
           "displayAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total display price.",
-            "format": "double"
+            "description": "The total display price."
           },
           "supplierAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total supplier price.",
-            "format": "double"
+            "description": "The total supplier price."
           },
           "internalAmount": {
             "minimum": 0,
             "type": "number",
-            "format": "double"
+            "description": "The total internal price."
           },
           "captureAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total capture price.",
-            "format": "double"
+            "description": "The total capture price."
           },
           "sourceAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The source amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The source amount still due after a partial refund occurs."
           },
           "displayAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The display amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The display amount still due after a partial refund occurs."
           },
           "supplierAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The supplier amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The supplier amount still due after a partial refund occurs."
           },
           "internalAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The internal amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The internal amount still due after a partial refund occurs."
           },
           "captureAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The capture amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The capture amount still due after a partial refund occurs."
+          },
+          "netTotalFeesAndCommissionsSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesAndCommissionsInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesAndCommissionsInPercentWithRefund": {
+            "type": "number",
+            "description": "All amounts that are not of type SALE",
+            "format": "float"
+          },
+          "cancellableWithPotentialCharges": {
+            "type": "boolean",
+            "description": "Whether a cancellation comes with partial charges. I.e. Only some of the items in contract are not fully refundable."
+          },
+          "netTotalFeesSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netCommissionableTotalSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "commissionableTotalSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesAndCommissionsSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFundsGroupedByBeneficiary": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Beneficiary"
+            }
+          },
+          "netCommissionableTotalSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netCommissionableTotalCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netCommissionableTotalDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netCommissionableTotalInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesAndCommissionsSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesAndCommissionsCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesAndCommissionsDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalFeesInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalSalesSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalSalesCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalSalesDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalSalesSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "netTotalSalesInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "commissionableTotalSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "commissionableTotalCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "commissionableTotalDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "commissionableTotalInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesAndCommissionsSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesAndCommissionsCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesAndCommissionsDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesAndCommissionsInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalSalesSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalSalesInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesInPercentWithRefund": {
+            "type": "number",
+            "description": "All amounts that are not of type SALE",
+            "format": "float"
+          },
+          "totalCommissionsInPercentWithRefund": {
+            "type": "number",
+            "description": "All amounts that are not of type SALE",
+            "format": "float"
+          },
+          "totalCommissionsInPercent": {
+            "type": "number",
+            "description": "All amounts that are not of type SALE before a refund was applied",
+            "format": "float"
+          },
+          "totalFeesAndCommissionsInPercent": {
+            "type": "number",
+            "description": "All amounts that are not of type SALE before a refund was applied",
+            "format": "float"
+          },
+          "netCaptureAmount": {
+            "type": "number"
+          },
+          "cancellableByTraveler": {
+            "type": "boolean",
+            "description": "Whether the booking can still be cancelled completely by the traveller."
+          },
+          "cancellableBySupplier": {
+            "type": "boolean",
+            "description": "Whether the booking can still be cancelled completely by the supplier."
+          },
+          "netSupplierAmount": {
+            "type": "number"
+          },
+          "cancellableWithNoCharges": {
+            "type": "boolean",
+            "description": "Whether the cancellation comes at no cost to the traveler."
+          },
+          "totalFeesSupplierAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "totalTokensEarned": {
             "type": "integer",
@@ -7213,56 +7333,54 @@
           "lodgingItinerary": {
             "$ref": "#/components/schemas/Itinerary"
           },
-          "totalFundsGroupedByBeneficiary": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Beneficiary"
-            }
-          },
           "netSourceAmount": {
-            "type": "number",
-            "format": "double"
+            "type": "number"
           },
           "netDisplayAmount": {
-            "type": "number",
-            "format": "double"
+            "type": "number"
           },
           "netInternalAmount": {
-            "type": "number",
-            "format": "double"
+            "type": "number"
           },
           "refundable": {
             "type": "boolean"
           },
-          "refunded": {
-            "type": "boolean"
+          "totalFeesSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
-          "netCaptureAmount": {
+          "totalFeesCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalFeesInternalAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalSalesSourceAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalSalesCaptureAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "totalSalesDisplayAmount": {
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
+          },
+          "fundsAvailableDate": {
+            "type": "string",
+            "description": "Returns the date the funds will be released to the customer.",
+            "format": "date"
+          },
+          "totalFeesInPercent": {
             "type": "number",
-            "format": "double"
-          },
-          "cancellableBySupplier": {
-            "type": "boolean",
-            "description": "Whether the booking can still be cancelled completely by the supplier."
-          },
-          "netSupplierAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "cancellableWithNoCharges": {
-            "type": "boolean",
-            "description": "Whether the cancellation comes at no cost to the traveler."
-          },
-          "cancellableWithPotentialCharges": {
-            "type": "boolean",
-            "description": "Whether a cancellation comes with partial charges. I.e. Only some of the items in contract are not fully refundable."
+            "description": "All amounts that are not of type SALE before a refund was applied",
+            "format": "float"
           },
           "lodging": {
             "$ref": "#/components/schemas/BookingContractItem"
           },
-          "cancellableByTraveler": {
-            "type": "boolean",
-            "description": "Whether the booking can still be cancelled completely by the traveller."
+          "refunded": {
+            "type": "boolean"
           }
         },
         "description": "A booking record is the contract that got created after a successful payment was submitted."
@@ -7421,97 +7539,83 @@
           "sourceAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total initial price as quoted in the original TripPay contract.",
-            "format": "double"
+            "description": "The total initial price as quoted in the original TripPay contract."
           },
           "displayAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total display price.",
-            "format": "double"
+            "description": "The total display price."
           },
           "supplierAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total supplier price.",
-            "format": "double"
+            "description": "The total supplier price."
           },
           "internalAmount": {
             "minimum": 0,
             "type": "number",
-            "format": "double"
+            "description": "The total internal price."
           },
           "captureAmount": {
             "minimum": 0,
             "type": "number",
-            "description": "The total capture price.",
-            "format": "double"
+            "description": "The total capture price."
           },
           "sourceAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The source amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The source amount still due after a partial refund occurs."
           },
           "displayAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The display amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The display amount still due after a partial refund occurs."
           },
           "supplierAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The supplier amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The supplier amount still due after a partial refund occurs."
           },
           "internalAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The internal amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The internal amount still due after a partial refund occurs."
           },
           "captureAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
-            "description": "The capture amount still due after a partial refund occurs.",
-            "format": "double"
+            "description": "The capture amount still due after a partial refund occurs."
           },
-          "netSourceAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "netDisplayAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "netInternalAmount": {
-            "type": "number",
-            "format": "double"
+          "cancellableWithPotentialCharges": {
+            "type": "boolean",
+            "description": "Whether the booking can still be cancelled and whether cancellation charges might still occur."
           },
           "netCaptureAmount": {
-            "type": "number",
-            "format": "double"
+            "type": "number"
+          },
+          "cancellableByTraveler": {
+            "type": "boolean",
+            "description": "Whether the booking can still be cancelled by the traveller."
           },
           "cancellableBySupplier": {
             "type": "boolean",
             "description": "Whether the booking can still be cancelled by the supplier. A supplier cancellation overrides the refundable"
           },
           "netSupplierAmount": {
-            "type": "number",
-            "format": "double"
+            "type": "number"
           },
           "cancellableWithNoCharges": {
             "type": "boolean",
             "description": "Whether the booking can still be cancelled and whether cancellation charges might still occur."
           },
-          "cancellableWithPotentialCharges": {
-            "type": "boolean",
-            "description": "Whether the booking can still be cancelled and whether cancellation charges might still occur."
+          "netSourceAmount": {
+            "type": "number"
           },
-          "cancellableByTraveler": {
-            "type": "boolean",
-            "description": "Whether the booking can still be cancelled by the traveller."
+          "netDisplayAmount": {
+            "type": "number"
+          },
+          "netInternalAmount": {
+            "type": "number"
           }
         },
         "description": "Returns the date when traveler checks into the room."
@@ -7621,35 +7725,30 @@
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original source amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "displayAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original display amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "supplierAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original supplier amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "internalAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original internal amount after a refund occurred",
-            "format": "double",
             "example": 5
           },
           "captureAmountRefundModifier": {
             "minimum": 0,
             "type": "number",
             "description": "The delta from the original capture amount after a refund occurred",
-            "format": "double",
             "example": 5
           }
         },
@@ -7685,7 +7784,7 @@
             "example": "user-1"
           },
           "refund": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "created": {
             "type": "string",
@@ -7984,7 +8083,7 @@
             "example": "stripe-eur"
           },
           "charge": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "name": {
             "type": "string",
@@ -8206,6 +8305,19 @@
             "type": "integer",
             "format": "int64"
           },
+          "sort": {
+            "$ref": "#/components/schemas/SortObject"
+          },
+          "number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "first": {
+            "type": "boolean"
+          },
+          "last": {
+            "type": "boolean"
+          },
           "size": {
             "type": "integer",
             "format": "int32"
@@ -8216,25 +8328,12 @@
               "$ref": "#/components/schemas/Mapping"
             }
           },
-          "number": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "sort": {
-            "$ref": "#/components/schemas/SortObject"
-          },
-          "first": {
-            "type": "boolean"
-          },
           "numberOfElements": {
             "type": "integer",
             "format": "int32"
           },
           "pageable": {
             "$ref": "#/components/schemas/PageableObject"
-          },
-          "last": {
-            "type": "boolean"
           },
           "empty": {
             "type": "boolean"
@@ -8244,12 +8343,12 @@
       "PageableObject": {
         "type": "object",
         "properties": {
+          "sort": {
+            "$ref": "#/components/schemas/SortObject"
+          },
           "offset": {
             "type": "integer",
             "format": "int64"
-          },
-          "sort": {
-            "$ref": "#/components/schemas/SortObject"
           },
           "pageNumber": {
             "type": "integer",
@@ -8273,10 +8372,10 @@
           "empty": {
             "type": "boolean"
           },
-          "sorted": {
+          "unsorted": {
             "type": "boolean"
           },
-          "unsorted": {
+          "sorted": {
             "type": "boolean"
           }
         }
@@ -8479,7 +8578,7 @@
         "type": "object",
         "properties": {
           "refund": {
-            "$ref": "#/components/schemas/Moneys"
+            "$ref": "#/components/schemas/CustomMonetaryAmount"
           },
           "description": {
             "type": "string",
@@ -8844,6 +8943,19 @@
             "type": "integer",
             "format": "int64"
           },
+          "sort": {
+            "$ref": "#/components/schemas/SortObject"
+          },
+          "number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "first": {
+            "type": "boolean"
+          },
+          "last": {
+            "type": "boolean"
+          },
           "size": {
             "type": "integer",
             "format": "int32"
@@ -8854,25 +8966,12 @@
               "$ref": "#/components/schemas/BookingContract"
             }
           },
-          "number": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "sort": {
-            "$ref": "#/components/schemas/SortObject"
-          },
-          "first": {
-            "type": "boolean"
-          },
           "numberOfElements": {
             "type": "integer",
             "format": "int32"
           },
           "pageable": {
             "$ref": "#/components/schemas/PageableObject"
-          },
-          "last": {
-            "type": "boolean"
           },
           "empty": {
             "type": "boolean"
@@ -9032,13 +9131,11 @@
           "supplierAmount": {
             "type": "number",
             "description": "Amount sold in supplier currency",
-            "format": "double",
             "example": 40.1
           },
           "internalAmount": {
             "type": "number",
             "description": "Amount sold in internal currency",
-            "format": "double",
             "example": 40.1
           }
         }
@@ -9080,9 +9177,9 @@
         "name": "Client Credentials",
         "flows": {
           "clientCredentials": {
-            "authorizationUrl": "https://iam.wink.travel/oauth2/authorize",
-            "tokenUrl": "https://iam.wink.travel/oauth2/token",
-            "refreshUrl": "https://iam.wink.travel/oauth2/refresh",
+            "authorizationUrl": "https://dev-iam.wink.travel:9000/oauth2/authorize",
+            "tokenUrl": "https://dev-iam.wink.travel:9000/oauth2/token",
+            "refreshUrl": "https://dev-iam.wink.travel:9000/oauth2/refresh",
             "scopes": {
               "payment.read": "Read TripPay data",
               "payment.write": "Write TripPay data",
