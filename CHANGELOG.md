@@ -2,6 +2,85 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 25.6.4 (2023-06-04)
+
+
+
+
+
+
+
+### Other changes
+
+**Update versions for release**
+
+
+[cee6c](https://github.com/wink-travel/trip-pay-sdk-java/commit/cee6c36584685c5) Bjorn Harvold *2023-06-04 07:25:57*
+
+**Merge branch 'release/25.6.4'**
+
+
+[15fdd](https://github.com/wink-travel/trip-pay-sdk-java/commit/15fddaf1d17acba) Bjorn Harvold *2023-06-04 07:25:57*
+
+**:bookmark: build: Updated Open API files**
+
+
+[c4f24](https://github.com/wink-travel/trip-pay-sdk-java/commit/c4f24f6d76d0a9d) Bjorn Harvold *2023-06-04 07:25:54*
+
+**:sparkles: feat(#2): changed VariableCharge to BeneficiaryCharge**
+
+
+[8c1a3](https://github.com/wink-travel/trip-pay-sdk-java/commit/8c1a3ae9fd709e6) Bjorn Harvold *2023-05-30 12:55:23*
+
+**:rocket: build(#2): prep-ing next release**
+
+
+[1e7d0](https://github.com/wink-travel/trip-pay-sdk-java/commit/1e7d0477ad45c6c) Bjorn Harvold *2023-05-29 08:25:55*
+
+**:recycle: refactor(#1): added new type mapping**
+
+
+[76da5](https://github.com/wink-travel/trip-pay-sdk-java/commit/76da578be22c44e) Bjorn Harvold *2023-05-21 08:36:29*
+
+**:recycle: refactor: formatted json document**
+
+* so we can better compare 
+
+[12baf](https://github.com/wink-travel/trip-pay-sdk-java/commit/12bafef44a06eb4) Bjorn Harvold *2023-05-21 06:03:57*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[446cd](https://github.com/wink-travel/trip-pay-sdk-java/commit/446cd8269df0979) Bjorn Harvold *2023-05-12 10:51:23*
+
+**Update for next development version**
+
+
+[f5bf7](https://github.com/wink-travel/trip-pay-sdk-java/commit/f5bf75cc969ebde) Bjorn Harvold *2023-05-12 10:51:06*
+
+**Merge tag '25.4.2' into develop**
+
+* Tag release 
+
+[a33d9](https://github.com/wink-travel/trip-pay-sdk-java/commit/a33d9237af276cd) Bjorn Harvold *2023-05-12 10:51:04*
+
+
+## v25.4.2 (2023-05-12)
+
+
+
+
+
+
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[3d332](https://github.com/wink-travel/trip-pay-sdk-java/commit/3d3328189d90fe2) Bjorn Harvold *2023-05-12 10:51:18*
+
+
 ## 25.4.2 (2023-05-12)
 
 
