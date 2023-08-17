@@ -2,6 +2,68 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 29.7.0 (2023-08-17)
+
+
+
+### Features
+
+-  :sparkles: added phone number to account ([96fd6](https://github.com/wink-travel/trip-pay-sdk-java/commit/96fd6b323f0580b) Bjorn Harvold)  
+-  :sparkles: added phone number to account ([a304f](https://github.com/wink-travel/trip-pay-sdk-java/commit/a304f2335a1b3fd) Bjorn Harvold)  
+
+
+
+
+### Other changes
+
+**Update versions for release**
+
+
+[e4b3d](https://github.com/wink-travel/trip-pay-sdk-java/commit/e4b3d551b632d94) Bjorn Harvold *2023-08-17 05:29:59*
+
+**Merge branch 'release/29.7.0'**
+
+
+[4cbee](https://github.com/wink-travel/trip-pay-sdk-java/commit/4cbee884eed6f9c) Bjorn Harvold *2023-08-17 05:29:59*
+
+**:bookmark: build: Updated Open API files**
+
+
+[0cb19](https://github.com/wink-travel/trip-pay-sdk-java/commit/0cb191379366af2) Bjorn Harvold *2023-08-17 05:29:56*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[329d5](https://github.com/wink-travel/trip-pay-sdk-java/commit/329d56837930a80) Bjorn Harvold *2023-08-06 03:21:36*
+
+**Update for next development version**
+
+
+[1bce9](https://github.com/wink-travel/trip-pay-sdk-java/commit/1bce9caf8562313) Bjorn Harvold *2023-08-06 03:21:16*
+
+**Merge tag '29.3.0' into develop**
+
+* Tag release 
+
+[f1c83](https://github.com/wink-travel/trip-pay-sdk-java/commit/f1c830e611773b7) Bjorn Harvold *2023-08-06 03:21:14*
+
+
+## v29.3.0 (2023-08-06)
+
+
+
+
+
+
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[65b46](https://github.com/wink-travel/trip-pay-sdk-java/commit/65b463b740e510c) Bjorn Harvold *2023-08-06 03:21:31*
+
+
 ## 29.3.0 (2023-08-06)
 
 
