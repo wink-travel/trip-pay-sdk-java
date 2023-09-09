@@ -2,6 +2,72 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 29.10.0 (2023-09-09)
+
+
+
+### Features
+
+-  :sparkles: added cancelOnRefund ([cffa4](https://github.com/wink-travel/trip-pay-sdk-java/commit/cffa44d9dee0111) Bjorn Harvold)  
+
+
+
+
+### Other changes
+
+**Merge branch 'release/29.10.0'**
+
+
+[ae35f](https://github.com/wink-travel/trip-pay-sdk-java/commit/ae35f3c174e9640) Bjorn Harvold *2023-09-09 03:11:27*
+
+**Update versions for release**
+
+
+[7c3fa](https://github.com/wink-travel/trip-pay-sdk-java/commit/7c3fa298087bd1a) Bjorn Harvold *2023-09-09 03:11:27*
+
+**:bookmark: build: Updated Open API files**
+
+
+[97707](https://github.com/wink-travel/trip-pay-sdk-java/commit/97707b3f1efb13c) Bjorn Harvold *2023-09-09 03:11:23*
+
+**:wrench: build: added payout object to booking contract**
+
+
+[205a1](https://github.com/wink-travel/trip-pay-sdk-java/commit/205a157f4417352) Bjorn Harvold *2023-09-05 08:34:08*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[b5dfe](https://github.com/wink-travel/trip-pay-sdk-java/commit/b5dfe31cf5f1715) Bjorn Harvold *2023-08-27 02:34:31*
+
+**Update for next development version**
+
+
+[88de3](https://github.com/wink-travel/trip-pay-sdk-java/commit/88de3ef659b8053) Bjorn Harvold *2023-08-27 02:34:13*
+
+**Merge tag '29.8.8' into develop**
+
+* Tag release 
+
+[a60a0](https://github.com/wink-travel/trip-pay-sdk-java/commit/a60a03dec70fa3f) Bjorn Harvold *2023-08-27 02:34:11*
+
+
+## v29.8.8 (2023-08-27)
+
+
+
+
+
+
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[69f88](https://github.com/wink-travel/trip-pay-sdk-java/commit/69f88ac008a9a88) Bjorn Harvold *2023-08-27 02:34:26*
+
+
 ## 29.8.8 (2023-08-27)
 
 
