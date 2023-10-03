@@ -29,7 +29,7 @@
 
     <scm>
         <connection>scm:git:ssh://github.com:wink-travel/trip-pay-sdk-java.git</connection>
-        <developerConnection>scm:git:ssh://github.com:wink-travel/trip-pay-java.git</developerConnection>
+        <developerConnection>scm:git:ssh://github.com:wink-travel/trip-pay-sdk-java.git</developerConnection>
         <url>https://github.com/wink-travel/trip-pay-sdk-java</url>
         <tag>HEAD</tag>
     </scm>
