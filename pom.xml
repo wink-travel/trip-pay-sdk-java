@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>trip-pay-sdk-java</artifactId>
-    <version>29.28.3-SNAPSHOT</version>
+    <version>29.28.3</version>
     <packaging>pom</packaging>
     <name>TripPay Java SDK</name>
     <description>Java libraries for all TripPay APIs.</description>
