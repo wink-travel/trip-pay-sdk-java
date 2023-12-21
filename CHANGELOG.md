@@ -2,13 +2,53 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 29.29.1 (2023-12-21)
+
+### Other changes
+
+**Merge branch 'release/29.29.1'**
+
+
+[e9610](https://github.com/wink-travel/trip-pay-sdk-java/commit/e96105d0fe5f541) Bjorn Harvold *2023-12-21 07:32:32*
+
+**Update versions for release**
+
+
+[0bd8b](https://github.com/wink-travel/trip-pay-sdk-java/commit/0bd8b6d53d99088) Bjorn Harvold *2023-12-21 07:32:32*
+
+**:bookmark: build: Updated Open API files**
+
+
+[7a6fd](https://github.com/wink-travel/trip-pay-sdk-java/commit/7a6fd4c53392cc2) Bjorn Harvold *2023-12-21 07:32:28*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[bf34a](https://github.com/wink-travel/trip-pay-sdk-java/commit/bf34a1b82d72784) Bjorn Harvold *2023-12-19 02:59:03*
+
+**Update for next development version**
+
+
+[dd6ad](https://github.com/wink-travel/trip-pay-sdk-java/commit/dd6adcc442c3595) Bjorn Harvold *2023-12-19 02:58:44*
+
+**Merge tag '29.28.3' into develop**
+
+* Tag release 
+
+[7ad9d](https://github.com/wink-travel/trip-pay-sdk-java/commit/7ad9d6789862c1f) Bjorn Harvold *2023-12-19 02:58:43*
+
+
+## v29.28.3 (2023-12-19)
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[3e998](https://github.com/wink-travel/trip-pay-sdk-java/commit/3e998b0f169ff15) Bjorn Harvold *2023-12-19 02:58:58*
+
+
 ## 29.28.3 (2023-12-19)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -46,12 +86,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.24.2 (2023-11-28)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -61,12 +95,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.24.2 (2023-11-28)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -104,12 +132,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.23.0 (2023-11-03)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -119,12 +141,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.23.0 (2023-11-03)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -162,12 +178,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.20.0 (2023-10-29)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -177,12 +187,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.20.0 (2023-10-29)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -220,12 +224,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.19.0 (2023-10-29)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -235,12 +233,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.19.0 (2023-10-29)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -278,12 +270,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.12.0 (2023-10-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -293,12 +279,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.12.0 (2023-10-16)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -336,12 +316,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.11.0 (2023-10-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -351,12 +325,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.11.0 (2023-10-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -399,12 +367,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.10.0 (2023-09-09)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -415,14 +377,9 @@ Changelog of trip-pay-sdk-java.
 
 ## 29.10.0 (2023-09-09)
 
-
-
 ### Features
 
 -  :sparkles: added cancelOnRefund ([cffa4](https://github.com/wink-travel/trip-pay-sdk-java/commit/cffa44d9dee0111) Bjorn Harvold)  
-
-
-
 
 ### Other changes
 
@@ -465,12 +422,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.8.8 (2023-08-27)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -480,12 +431,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.8.8 (2023-08-27)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -523,12 +468,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.8.3 (2023-08-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -538,12 +477,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.8.3 (2023-08-24)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -581,12 +514,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.8.0 (2023-08-22)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -596,12 +523,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.8.0 (2023-08-22)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -639,12 +560,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.7.0 (2023-08-17)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -655,15 +570,10 @@ Changelog of trip-pay-sdk-java.
 
 ## 29.7.0 (2023-08-17)
 
-
-
 ### Features
 
 -  :sparkles: added phone number to account ([96fd6](https://github.com/wink-travel/trip-pay-sdk-java/commit/96fd6b323f0580b) Bjorn Harvold)  
 -  :sparkles: added phone number to account ([a304f](https://github.com/wink-travel/trip-pay-sdk-java/commit/a304f2335a1b3fd) Bjorn Harvold)  
-
-
-
 
 ### Other changes
 
@@ -701,12 +611,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.3.0 (2023-08-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -716,12 +620,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.3.0 (2023-08-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -759,12 +657,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v29.0.0 (2023-07-29)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -774,12 +666,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 29.0.0 (2023-07-29)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -822,12 +708,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v28.2.0 (2023-07-27)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -837,12 +717,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 28.2.0 (2023-07-27)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -895,12 +769,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v28.1.0 (2023-07-26)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -910,12 +778,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 28.1.0 (2023-07-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -958,12 +820,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v28.0.0 (2023-07-26)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -973,12 +829,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 28.0.0 (2023-07-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1052,12 +902,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v27.2.1 (2023-07-25)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1067,12 +911,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 27.2.1 (2023-07-25)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1135,12 +973,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v27.1.1 (2023-07-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1150,12 +982,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 27.1.1 (2023-07-24)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1213,12 +1039,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v26.1.1 (2023-06-13)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1228,12 +1048,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 26.1.1 (2023-06-13)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1281,12 +1095,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v26.0.3 (2023-06-10)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1296,12 +1104,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 26.0.3 (2023-06-10)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1339,12 +1141,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.6.8 (2023-06-04)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1354,12 +1150,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.6.8 (2023-06-04)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1397,12 +1187,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.6.4 (2023-06-04)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1412,12 +1196,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.6.4 (2023-06-04)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1476,12 +1254,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.4.2 (2023-05-12)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1491,12 +1263,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.4.2 (2023-05-12)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1539,12 +1305,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.3.0 (2023-05-05)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1554,12 +1314,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.3.0 (2023-05-05)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1614,12 +1368,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.2.7 (2023-04-26)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1629,12 +1377,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.2.7 (2023-04-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1677,12 +1419,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.2.3 (2023-04-12)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1692,12 +1428,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.2.3 (2023-04-12)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1745,12 +1475,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.1.0 (2023-04-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1760,12 +1484,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.1.0 (2023-04-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1819,12 +1537,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v25.0.3 (2023-03-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1834,12 +1546,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 25.0.3 (2023-03-24)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1913,12 +1619,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v24.7.0 (2023-03-17)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1929,14 +1629,9 @@ Changelog of trip-pay-sdk-java.
 
 ## 24.7.0 (2023-03-17)
 
-
-
 ### Features
 
 -  :sparkles: immediateRefund endpoints now available ([4ba81](https://github.com/wink-travel/trip-pay-sdk-java/commit/4ba81c11793c078) Bjorn Harvold)  
-
-
-
 
 ### Other changes
 
@@ -1979,12 +1674,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v24.3.3 (2023-03-10)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1994,12 +1683,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 24.3.3 (2023-03-10)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2042,12 +1725,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v24.0.0 (2023-03-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2058,15 +1735,10 @@ Changelog of trip-pay-sdk-java.
 
 ## 24.0.0 (2023-03-06)
 
-
-
 ### Features
 
 -  :sparkles: Changed pricing type ([613f7](https://github.com/wink-travel/trip-pay-sdk-java/commit/613f7703e8a8c4f) Bjorn Harvold)  
 -  :sparkles: Added TripPayEvent webhook object ([960bc](https://github.com/wink-travel/trip-pay-sdk-java/commit/960bc32bf8f9555) Bjorn Harvold)  
-
-
-
 
 ### Other changes
 
@@ -2168,12 +1840,6 @@ Changelog of trip-pay-sdk-java.
 
 ## v23.0.0 (2022-10-30)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2183,12 +1849,6 @@ Changelog of trip-pay-sdk-java.
 
 
 ## 23.0.0 (2022-10-30)
-
-
-
-
-
-
 
 ### Other changes
 
