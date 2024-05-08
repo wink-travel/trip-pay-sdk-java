@@ -2,7 +2,6 @@ package io.trippay.sdk.payment;
 
 import io.trippay.sdk.payment.api.AccountApi;
 import io.trippay.sdk.payment.api.AccountMappingsApi;
-import io.trippay.sdk.payment.api.AcquiringApi;
 import io.trippay.sdk.payment.api.AffiliateApi;
 import io.trippay.sdk.payment.api.AgentApi;
 import io.trippay.sdk.payment.api.ContractApi;
@@ -59,8 +58,4 @@ public class PaymentSDKConfiguration {
         return new AffiliateApi(apiClient());
     }
 
-    @Bean
-    public AcquiringApi acquiringApi() {
-        return new AcquiringApi(apiClient());
-    }
 }
