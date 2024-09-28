@@ -2,6 +2,52 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 30.5.10 (2024-09-28)
+
+### Other changes
+
+**Merge branch 'release/30.5.10'**
+
+
+[bc3b1](https://github.com/wink-travel/trip-pay-sdk-java/commit/bc3b17d857f0a1f) Bjorn Harvold *2024-09-28 03:40:44*
+
+**Update versions for release**
+
+
+[ce807](https://github.com/wink-travel/trip-pay-sdk-java/commit/ce807df367ad0de) Bjorn Harvold *2024-09-28 03:40:43*
+
+**:bookmark: build: Updated Open API files**
+
+
+[5e387](https://github.com/wink-travel/trip-pay-sdk-java/commit/5e387ed43259d29) Bjorn Harvold *2024-09-28 03:40:39*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[a7937](https://github.com/wink-travel/trip-pay-sdk-java/commit/a793713c70017ac) Bjorn Harvold *2024-09-12 07:12:37*
+
+**Update for next development version**
+
+
+[e3b39](https://github.com/wink-travel/trip-pay-sdk-java/commit/e3b398bd3ca40ef) Bjorn Harvold *2024-09-12 07:12:12*
+
+**Merge tag '30.5.2' into develop**
+
+* Tag release 
+
+[879ec](https://github.com/wink-travel/trip-pay-sdk-java/commit/879ec6edad7f24d) Bjorn Harvold *2024-09-12 07:12:10*
+
+
+## v30.5.2 (2024-09-12)
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[3b254](https://github.com/wink-travel/trip-pay-sdk-java/commit/3b25472b4cf8627) Bjorn Harvold *2024-09-12 07:12:28*
+
+
 ## 30.5.2 (2024-09-12)
 
 ### Other changes
