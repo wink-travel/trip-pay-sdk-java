@@ -15,8 +15,8 @@ git checkout develop
 # grab latest spec files from production servers
 ./downloadLatestOpenApiSpecs.bash
 
-# grab the latest platform version from one of the new open api spec files
-newVersion=`jq -r '.info.version' ./payment/src/main/resources/openapi-spec.json`
+echo "Retrieving next version number..."
+newVersion=$(npx git-changelog-command-line --print-next-version --major-version-pattern BREAKING --minor-version-pattern feat)
 
 echo "Setting the next snapshot version to $newVersion"
 mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
