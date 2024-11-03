@@ -2,6 +2,73 @@
 
 Changelog of trip-pay-sdk-java.
 
+## 30.5.14 (2024-11-03)
+
+### Other changes
+
+**Merge branch 'release/30.5.14'**
+
+
+[c7f5d](https://github.com/wink-travel/trip-pay-sdk-java/commit/c7f5d1051cd1714) Bjorn Harvold *2024-11-03 07:16:08*
+
+**Update versions for release**
+
+
+[4542b](https://github.com/wink-travel/trip-pay-sdk-java/commit/4542b66bd2d104c) Bjorn Harvold *2024-11-03 07:16:08*
+
+**:bookmark: build: Updated Open API files**
+
+
+[060a5](https://github.com/wink-travel/trip-pay-sdk-java/commit/060a542706dd060) Bjorn Harvold *2024-11-03 07:13:58*
+
+**Merge branch 'release/null'**
+
+
+[35098](https://github.com/wink-travel/trip-pay-sdk-java/commit/35098db5163abfe) Bjorn Harvold *2024-11-01 02:51:26*
+
+**Update versions for release**
+
+
+[1d558](https://github.com/wink-travel/trip-pay-sdk-java/commit/1d558619f8e6bef) Bjorn Harvold *2024-11-01 02:51:26*
+
+**Merge tag 'null' into develop**
+
+* Tag release 
+
+[0009e](https://github.com/wink-travel/trip-pay-sdk-java/commit/0009e9c56f16629) Bjorn Harvold *2024-11-01 02:51:26*
+
+**:bookmark: build: Updated Open API files**
+
+
+[f84e5](https://github.com/wink-travel/trip-pay-sdk-java/commit/f84e52629c237b2) Bjorn Harvold *2024-11-01 02:51:22*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[af3cc](https://github.com/wink-travel/trip-pay-sdk-java/commit/af3cc6fd3cfacac) Bjorn Harvold *2024-10-04 12:37:41*
+
+**Update for next development version**
+
+
+[21e5f](https://github.com/wink-travel/trip-pay-sdk-java/commit/21e5fd7ebff277d) Bjorn Harvold *2024-10-04 12:37:23*
+
+**Merge tag '30.5.13' into develop**
+
+* Tag release 
+
+[f76ac](https://github.com/wink-travel/trip-pay-sdk-java/commit/f76ac8e0b17de94) Bjorn Harvold *2024-10-04 12:37:21*
+
+
+## v30.5.13 (2024-10-04)
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[61161](https://github.com/wink-travel/trip-pay-sdk-java/commit/61161dc14c010a9) Bjorn Harvold *2024-10-04 12:37:37*
+
+
 ## 30.5.13 (2024-10-04)
 
 ### Other changes
