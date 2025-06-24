@@ -62,8 +62,8 @@
         <nexus.staging.maven.plugin>1.7.0</nexus.staging.maven.plugin>
         <openapi.generator.version>7.13.0</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
-        <spring.version>6.2.5</spring.version>
-        <spring.security.version>6.4.4</spring.security.version>
+        <spring.version>6.2.8</spring.version>
+        <spring.security.version>6.5.1</spring.security.version>
         <swagger.annotations.version>2.2.34</swagger.annotations.version>
         <threeten.version>1.8.0</threeten.version>
         <threetenbp.version>1.7.1</threetenbp.version>
