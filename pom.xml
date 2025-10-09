@@ -13,6 +13,12 @@
     <packaging>pom</packaging>
     <name>TripPay Java SDK</name>
     <description>Java libraries for all TripPay APIs.</description>
+    <inceptionYear>2013</inceptionYear>
+
+    <organization>
+        <name>TripPay</name>
+        <url>https://trippay.io</url>
+    </organization>
 
     <licenses>
         <license>
@@ -171,13 +177,21 @@
                     <failOnError>false</failOnError>
                     <failOnWarnings>false</failOnWarnings>
                 </configuration>
-                <extensions>true</extensions>
                 <executions>
+                    <!-- Execution to generate Javadoc HTML files -->
                     <execution>
                         <id>generate-javadoc-json</id>
                         <phase>compile</phase>
                         <goals>
                             <goal>javadoc-no-fork</goal>
+                        </goals>
+                    </execution>
+                    <!-- Execution to package Javadoc into a JAR -->
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
